@@ -49,14 +49,14 @@ export default function Questions() {
 
   return (
     <>
-      <div className="min-h-[70dvh] h-max  pt-10 font-rubik flex justify-start items-center flex-col md:min-h-[50dvh]">
+      <main className="min-h-[70dvh] h-max  pt-10 font-rubik flex justify-start items-center flex-col md:min-h-[50dvh] md:pt-0">
         <div className="w-[90%] gap-y-3 flex justify-center items-center flex-col ">
           <div className="text-2xl text-s-dark-blue font-[500] text-center ">
             Frequently Asked Questions
           </div>
           <div
-            className="text-[14px] text-s-gray-blue
-          text-center font-[500]"
+            className="text-[16px] text-s-gray-blue
+          text-center font-[400]"
           >
             Here are some of our FAQs. If you have any other questions you'd
             like answered please feel free to email us.
@@ -70,7 +70,16 @@ export default function Questions() {
                   <div key={item.id} className="w-full">
                     <div className="flex flex-col justify-center w-full items-center py-2">
                       <div className="flex w-full justify-between items-center py-4">
-                        <p className="text-[14px]">{item.question}</p>
+                        <p
+                          onClick={() => toggleFAQ(item.id)}
+                          className={
+                            !item.active
+                              ? "text-[14px] cursor-pointer hover:text-p-soft-red duration-300"
+                              : "text-[14px] cursor-pointer"
+                          }
+                        >
+                          {item.question}
+                        </p>
                         <div
                           className="cursor-pointer"
                           onClick={() => toggleFAQ(item.id)}
@@ -104,13 +113,13 @@ export default function Questions() {
               })}
             </div>
           </div>
-          <div className='h-40 flex justify-center items-center w-full'>
-            <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-md text-[14px] w-[140px]">
+          <div className="h-40 flex justify-center items-center w-full">
+            <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-md text-[14px] w-[140px] transition-colors duration-500 border-2 border-transparent hover:bg-white hover:text-p-soft-blue hover:border-p-soft-blue">
               More Info
             </button>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

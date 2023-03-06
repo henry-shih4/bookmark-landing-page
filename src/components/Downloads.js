@@ -3,14 +3,14 @@ import React from "react";
 export default function Downloads() {
   return (
     <>
-      <div className="min-h-[100dvh] flex flex-col justify-start items-center font-rubik pb-10">
-        <div className="py-10 w-[90%] gap-y-3 flex flex-col justify-center items-center">
+      <main className="min-h-[100dvh] flex flex-col justify-start items-center font-rubik pb-10 md:pb-0">
+        <div className="py-10 w-[90%] gap-y-3 flex flex-col justify-center items-center md:pb-0">
           <div className="text-2xl text-s-dark-blue font-[500] ">
             Download the extension
           </div>
           <div
-            className="text-[14px] text-s-gray-blue
-          text-center font-[500] w-[50%]"
+            className="text-[16px] text-s-gray-blue
+          text-center font-[400] w-[50%]"
           >
             We've got more browsers in the pipeline. Please do let us know if
             you've got a favorite you'd like us to prioritize.
@@ -29,7 +29,7 @@ export default function Downloads() {
             </div>
             <div className="flex flex-col justify-center items-center gap-y-4">
               <img alt="dots" src="/images/bg-dots.svg" />
-              <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-sm text-[14px] w-[200px]">
+              <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-sm text-[14px] w-[200px] transition-colors duration-500 border-2 border-transparent hover:bg-white hover:text-p-soft-blue hover:border-p-soft-blue">
                 Add & Install Extension
               </button>
             </div>
@@ -47,7 +47,7 @@ export default function Downloads() {
             </div>
             <div className="flex flex-col justify-center items-center gap-y-4">
               <img alt="dots" src="/images/bg-dots.svg" />
-              <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-sm text-[14px] w-[200px]">
+              <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-sm text-[14px] w-[200px] transition-colors duration-500 border-2 border-transparent hover:bg-white hover:text-p-soft-blue hover:border-p-soft-blue">
                 Add & Install Extension
               </button>
             </div>
@@ -65,13 +65,13 @@ export default function Downloads() {
             </div>
             <div className="flex flex-col justify-center items-center gap-y-4">
               <img alt="dots" src="/images/bg-dots.svg" />
-              <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-sm text-[14px] w-[200px]">
+              <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-sm text-[14px] w-[200px] transition-colors duration-500 border-2 border-transparent hover:bg-white hover:text-p-soft-blue hover:border-p-soft-blue">
                 Add & Install Extension
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }
