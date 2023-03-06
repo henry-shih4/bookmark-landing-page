@@ -4,7 +4,7 @@ export default function Main() {
   return (
     <>
       <main className="min-h-[70dvh] h-[70vh]  md:flex flex-row-reverse md:justify-center md:w-[85%]md:items-center md:min-h-[50dvh] md:h-[50dvh] overflow-hidden">
-        <div className="relative bg-white h-[50%] flex justify-center items-center overflow-x-hidden md:w-[50%]  md:h-[100%]">
+        <div className="relative bg-white h-[50%] flex justify-center items-center overflow-hidden md:w-[50%]  md:h-[100%]">
           <div className="z-[10]">
             <img
               className="object-cover max-w-[320px] md:max-w-[400px] lg:max-w-[550px]"
@@ -26,7 +26,7 @@ export default function Main() {
             </div>
             <div className="flex justify-center items-center gap-x-4 font-[500]">
               <div className="w-[50%]">
-                <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-md text-[14px] w-[140px] transition-colors duration-500 border-2 border-transparent hover:bg-white hover:text-p-soft-blue hover:border-p-soft-blue">
+                <button className="bg-p-soft-blue text-white p-3 rounded-md shadow-slate-400 shadow-md text-[14px] w-[160px] transition-colors duration-500 border-2 border-transparent hover:bg-white hover:text-p-soft-blue hover:border-p-soft-blue">
                   Get it on Chrome
                 </button>
               </div>
